@@ -1,0 +1,316 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Fira+Sans+Extra+Condensed:ital,wght@1,700&family=Philosopher:wght@700&display=swap");
+body {
+  margin: 0;
+  font-family: "Noto sans TC", sans-serif;
+  letter-spacing: 1px;
+  color: #333;
+  line-height: 1.4;
+  overflow: auto; /* 或者 overflow-y: scroll; */
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.wrapper-content {
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+header,
+.section-primary,
+footer {
+  background-color: #FFF0AC;
+}
+
+.header-content {
+  width: 100%;
+  background-color: #FFF0AC;
+  height: 70px;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  color: #000;
+  font-size: 24px;
+  text-decoration: underline;
+}
+
+.header-nav {
+  width: 230px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-nav a {
+  display: flex;
+  align-items: center;
+  margin-top: 20px; /* 所有按鈕同步向下移動 */
+}
+
+/* primary */
+.primary-content {
+  background-color: #FFF0AC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 80px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.wrapper-primary-text {
+  width: 50%;
+}
+
+.primary__text {
+  margin-bottom: 25px;
+}
+
+/* .section-primary {
+  padding: 20px;
+  background-color: #f9f9f9;
+} */
+
+.wrapper-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.wrapper-primary-text,
+.wrapper-experience,
+.wrapper-education {
+  flex: 1;
+}
+
+.title-with-image {
+  display: flex;
+  align-items: center;
+}
+
+.primary__title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+.experience__title,
+.education__title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.primary__text {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.experience__item,
+.education__item {
+  margin-bottom: 20px;
+}
+
+.company-logo-container,
+.school-logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.experience__icon,
+.education__icon {
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+.experience__company,
+.education__school {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.experience__role,
+.education__major{
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.experience__time,
+.education__time {
+  font-size: 16px;
+  margin: 5px 0;
+  font-style: italic;
+}
+
+.experience__description,
+.education__description {
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+.experience__description {
+  line-height: 1.6;
+}
+
+.experience__description strong {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.contribution {
+  background-color: #ffffff;
+  padding: 50px 30px;
+}
+
+.contribution-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.contribution-logo {
+  flex: 1;
+}
+
+.company-logo {
+  max-width: 300px;
+}
+
+.contribution-text {
+  flex: 2;
+}
+
+.contribution__title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.contribution__description {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* footer */
+footer {
+  margin-top: 100px;
+  text-align: right;
+}
+
+.footer-content {
+  background-color: #FFF0AC;
+  padding: 30px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    justify-content: flex-start;
+    width: fit-content;
+  }
+
+  footer nav {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer-content {
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  footer nav {
+    width: 100%;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+
+  .footer-nav-list {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  .primary-content {
+    padding-bottom: 0;
+  }
+
+  .wrapper-primary-text {
+    width: 50%;
+    padding-bottom: 80px;
+  }
+
+  .primary__main-img {
+    width: 50%;
+    align-self: flex-end;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .primary-content {
+    flex-direction: column;
+    padding-bottom: 0;
+    padding-top: 70px;
+  }
+  .wrapper-primary-text {
+    width: 90%;
+  }
+
+  .primary__social {
+    display: none;
+  }
+
+  .primary__main-img {
+    width: 80%;
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  header {
+    position: fixed; /* 固定 header 在页面顶部 */
+    top: 0; /* 确保 header 贴在顶部 */
+    z-index: 10; /* 保持 header 在最高层 */
+    width: 100%; /* 使 header 占满屏幕宽度 */
+    background-color: #FFF0AC; /* 添加背景颜色，防止透明 */
+  }
+
+  .header-content {
+    padding: 10px 15px; /* 为内容添加适当的内边距 */
+    transition: background-color 0.2s ease; /* 平滑的背景色过渡 */
+    box-sizing: border-box; /* 确保内边距不会影响宽度 */
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .wrapper-content {
+    width: 100%; /* 确保内容占满宽度 */
+    padding: 0 15px; /* 为两侧添加适当的内边距 */
+    box-sizing: border-box; /* 确保内边距和边框在计算总宽度时被考虑 */
+  }
+}
