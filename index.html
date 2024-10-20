@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roger Lin</title>
+    <title>Roger (Jia-Chih) Lin</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -14,7 +14,7 @@
     <header>
         <header>
             <div id="header-content" class="header-content wrapper-content">
-                <h1 class="logo">Roger Lin</h1>
+                <h1 class="logo">Roger (Jia-Chih) Lin</h1>
                 <nav class="header-nav">
                     <!-- Home Icon -->
                     <a href="" class="link-icon" target="_blank" title="Home">
@@ -67,8 +67,8 @@
                         <p class="experience__time">Feb 2021 - Jul 2024</p>
                         <p class="experience__description">
                             <strong>Skills:</strong> 
-                            <strong>Programming Languages:</strong> Python(advanced), PHP(advanced), TypeScript(advanced), JavaScript, C++, JAVA<br>
-                            <strong>Frameworks:</strong> Django, Laravel, NestJS, Node.js, React.js, Flask<br>
+                            <strong>Programming Languages:</strong> Python, Go, Java, TypeScript, PHP, JavaScript, C++<br>
+                            <strong>Frameworks:</strong> Django, Laravel, NestJS, Node.js, React.js, Spring Boot, Flask<br>
                             <strong>Developing Tools:</strong> Linux, Docker, Git, Nginx, BERT, Supervisord, MySQL, PostgreSQL, Oracle, MongoDB, Prisma, Redis, Jenkins, Azure, Apache Airflow, Kafka, Swagger, Cloudflare
                         </p>
                     </div>
@@ -117,25 +117,58 @@
                 <div class="contribution-text">
                     <!-- <h3 class="contribution__title">Contributions</h3> -->
                     <p class="contribution__description">
-                        ● Built a bug search engine using Django (Python-based web framework) and BERT (Bidirectional Encoder Representations from Transformers), <strong>reducing search time by 16 hours per month for a team of 10 engineers</strong>.<br>
-                        ● Developed an automation infrastructure using Laravel (PHP-based web framework) and Jenkins, <strong>leading to $80,000 in annual savings for the company</strong>.<br>
-                        ● Streamlined data collection processes, adopting Airflow and Kafka to access company public data, <strong>and saved 16 hours per month for developers</strong>.<br>
-                        ● Implemented GitLab CI/CD, increasing unit testing coverage by 10%, improving system reliability, and <strong>reducing deployment time from 40 to 5 minutes</strong>. Also, set up monitoring and alerts, enhancing troubleshooting.<br>
-                        ● Processed 45GB of data using SQL and Supervisord, <strong>implementing information retrieval systems to deliver real-time insights to managers and improving production decision-making</strong>.<br>
-                        ● Implemented WebSocket for collaborative forms editing, <strong>saving 8 hours per month for 20 project leaders on data organization and weekly report distribution</strong>.<br>
-                        ● Integrated legacy systems with Azure login, <strong>achieving Single Sign-On for 300+ employees</strong>, simplifying the user login process.<br>
-                        ● Enhanced security and <strong>reduced webpage load time to under 0.5 seconds</strong> by incorporating SSL and HTTP/2 across legacy systems, improving performance for internal company portals.
+                        ● Built a bug search engine using <strong>Django</strong> (Python-based web framework) and <strong>BERT</strong> (Bidirectional Encoder Representations from Transformers), reducing search time by 16 hours per month for a team of 10 engineers.<br>
+                        ● Developed an automation infrastructure using <strong>Laravel</strong> (PHP-based web framework) and <strong>Jenkins</strong>, leading to $80,000 in annual savings for the company.<br>
+                        ● Streamlined data collection processes, adopting <strong>Airflow</strong> and <strong>Kafka</strong> to access public company data, saving 16 hours per month for developers.<br>
+                        ● Implemented <strong>GitLab CI/CD</strong> with <strong>Docker</strong> and <strong>Docker Compose</strong>, increasing unit testing coverage by 10%, improving system reliability, and reducing deployment time from 40 to 5 minutes.<br>
+                        ● Processed 45GB of data using <strong>SQL</strong> and <strong>Supervisord</strong>, implementing information retrieval systems to deliver real-time insights to managers, improving production decision-making.<br>
+                        ● Implemented <strong>WebSocket</strong> for collaborative forms editing, saving 8 hours per month for 20 project leaders on data organization and weekly report distribution.<br>
+                        ● Leveraged <strong>OAuth2</strong> with <strong>Microsoft Azure</strong> to connect legacy systems, enabling Single Sign-On for over 300 employees, simplifying the user login experience.
                     </p>
                 </div>
             </div>
         </section>
 
+        <!-- Software Projects Section -->
+        <section class="software-projects">
+            <div class="projects-content wrapper-content">
+                <h3 class="projects__title">Software Projects</h3>
+
+                <!-- Project 1 -->
+                <div class="project__item">
+                    <h4 class="project__name">Webmail System</h4>
+                    <p class="project__time">Sep 2024 - Dec 2024 | Web Programming</p>
+                    <p class="project__description">
+                        TypeScript | JavaScript | Node.js | React.js | Redux | Redis<br>
+                        <br>
+                        ● Integrated real-time push notifications using <strong>React.js</strong> and <strong>Redux</strong> to alert users of new emails, enhancing user engagement and overall experience.<br>
+                        ● Optimized server performance using asynchronous email queue processing in <strong>Node.js</strong>, reducing latency and enabling fast, real-time email delivery even during periods of high traffic.<br>
+                        ● Implemented <strong>Redis</strong> caching to enhance response times for frequently accessed emails and attachments, ensuring faster retrieval and reduced load on the database.
+                    </p>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project__item">
+                    <h4 class="project__name">Network File Server</h4>
+                    <p class="project__time">Sep 2024 - Dec 2024 | Network Programming</p>
+                    <p class="project__description">
+                        Java | TCP | UDP<br>
+                        <br>
+                        ● Built a TCP-based network file server using <strong>Java</strong> to handle client-server communication over a reliable connection for the transmission of text files.<br>
+                        ● Transitioned the server to use the <strong>UDP</strong> protocol, implementing logic to handle datagram size limits by breaking files into smaller chunks and ensuring reliable transmission with proper chunk ordering and retransmission of lost packets.<br>
+                        ● Utilized <strong>Java's threading model</strong> to manage multiple client connections and optimized the server's performance for both TCP and UDP protocols.
+                    </p>
+                </div>
+
+                <!-- Additional projects can be added here -->
+            </div>
+        </section>
     </main>
     <footer>
         <div class="footer-content wrapper-content">
             <div>
-                <div class="logo">Roger Lin</div>
-                <div class="footer__license">© 2024 Roger Lin</div>
+                <div class="logo">Roger (Jia-Chih) Lin</div>
+                <div class="footer__license">© 2024 Roger (Jia-Chih) Lin</div>
             </div>
         </div>
     </footer>
